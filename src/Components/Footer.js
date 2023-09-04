@@ -33,15 +33,15 @@ const CompanyInfo = styled.div`
   align-items: center;
   font-size: 10px;
 `;
-const CompanyInfoItem = styled.div`
-  width: 30vw;
-  margin-bottom: 8px;
-  font-size: 9px;
-  font-weight: 300;
-  @media screen and (max-width: 768px) {
-    width: 90vw;
-  }
-`;
+// const CompanyInfoItem = styled.div`
+//   width: 30vw;
+//   margin-bottom: 8px;
+//   font-size: 9px;
+//   font-weight: 300;
+//   @media screen and (max-width: 768px) {
+//     width: 90vw;
+//   }
+// `;
 const Disclaimer = styled.div`
   width: 30vw;
   display: flex;
@@ -98,7 +98,7 @@ function Footer() {
     <FooterContainer>
       <FooterInfo>
         <CompanyInfo>
-          <CompanyInfoItem style={{ fontWeight: 600, fontSize: 11 }}>
+          {/* <CompanyInfoItem style={{ fontWeight: 600, fontSize: 11 }}>
             <span>(주) 호텔마스터</span>{" "}
             <span style={{ marginLeft: "5vw" }}>
               이용약관 | 개인정보처리방침 | 사업자정보확인
@@ -113,7 +113,7 @@ function Footer() {
           </CompanyInfoItem>
           <CompanyInfoItem>
             서울특별시 영등포구 63로 40 (라이프빌딩 912호)
-          </CompanyInfoItem>
+          </CompanyInfoItem> */}
         </CompanyInfo>
         <Disclaimer>
           <DownLoadTextBox> 호텔마스터 이용방법 다운로드</DownLoadTextBox>
