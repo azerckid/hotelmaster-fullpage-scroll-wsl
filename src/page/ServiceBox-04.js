@@ -15,8 +15,9 @@ const ChapterSubBox = styled.div`
   font-family: "SUIT", Heavy;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
-  margin: 0.5% 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const DescriptionBox = styled.div`
   width: 20vw;
@@ -25,6 +26,9 @@ const DescriptionBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
 
   div:nth-child(1) {
     margin-bottom: 4px;
@@ -37,6 +41,15 @@ const DescriptionBox = styled.div`
   div:nth-child(3) {
     font-size: 1rem;
   }
+  @media screen and (max-width: 768px) {
+    div:nth-child(1) {
+      font-size: 1.5rem;
+    }
+    div:nth-child(2) {
+    }
+    div:nth-child(3) {
+    }
+  }
 `;
 
 const DePicBox02 = styled.div`
@@ -46,6 +59,10 @@ const DePicBox02 = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: 30vh;
+  }
 `;
 
 const ServiceBox_02 = () => {

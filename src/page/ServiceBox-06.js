@@ -21,8 +21,9 @@ const ChapterSubBox = styled.div`
   font-family: "SUIT", Heavy;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #000;
-  /* margin: 0.5% 0; */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const DescriptionBox = styled.div`
   width: 20vw;
@@ -45,6 +46,9 @@ const DescriptionBox = styled.div`
     font-size: 1.3rem;
     font-weight: 500;
   }
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 
 const DePicBox02 = styled.div`
@@ -54,6 +58,10 @@ const DePicBox02 = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: 30vh;
+  }
 `;
 
 const ServiceBox_02 = () => {

@@ -18,7 +18,9 @@ const DescriptionBox = styled.div`
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
-  margin: 0.5% 0;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 const DePicBox = styled.div`
   width: 40vw;
@@ -26,6 +28,9 @@ const DePicBox = styled.div`
   background-image: ${(props) => `url(${props.depic})`};
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+  }
 `;
 
 const ServiceBox_01 = ({ des01, des02, depic }) => {

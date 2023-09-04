@@ -10,7 +10,7 @@ const NaviContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     width: 674px;
     height: 70px;
     margin-top: 0px;
@@ -48,16 +48,16 @@ const NaviLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   font-family: "SUIT";
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 200;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     margin-left: 8px;
     margin-right: 8px;
     color: darkgray;
     text-decoration: none;
     cursor: pointer;
     font-family: "SUIT";
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 400;
   }
 `;
@@ -71,6 +71,10 @@ const LogoBox = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   z-index: 10;
+  @media screen and (max-width: 768px) {
+    width: 70px;
+    margin-top: 0px;
+  }
 `;
 
 const NaviBar = () => {

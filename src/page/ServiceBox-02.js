@@ -36,8 +36,9 @@ const DescriptionBox = styled.div`
   font-family: "SUIT", Heavy;
   font-size: 1rem;
   font-weight: 500;
-  color: #000;
-  margin: 0.5% 0;
+  @media screen and (max-width: 768px) {
+    padding-top: 10vh;
+  }
 `;
 const DePicBox = styled.div`
   width: 90vw;

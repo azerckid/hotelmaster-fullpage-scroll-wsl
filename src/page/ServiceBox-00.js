@@ -23,6 +23,9 @@ const DescriptionBox = styled.div`
   font-weight: 700;
   color: #fff;
   margin: 0.5% 0;
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 const StoreBox = styled.div`
   display: flex;
@@ -39,6 +42,11 @@ const ButtonBox = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 70px;
+    margin: 10px 10px;
+  }
 `;
 
 const ServiceBox_01 = ({ des01, des02, des03, depic }) => {

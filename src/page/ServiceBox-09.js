@@ -36,6 +36,23 @@ const DePicBox02 = styled.div`
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    div:nth-child(1) {
+      div:nth-child(1) {
+        font-size: 1.3rem;
+      }
+      div:nth-child(2) {
+        margin-top: -10vw;
+      }
+    }
+    div:nth-child(2) {
+      width: 90px;
+      height: 90px;
+    }
+  }
 `;
 
 const ServiceBox_02 = () => {

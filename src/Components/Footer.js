@@ -21,6 +21,9 @@ const FooterInfo = styled.div`
   justify-content: center;
   align-items: center;
   /* background-color: blueviolet; */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const CompanyInfo = styled.div`
   width: 50vw;
@@ -35,6 +38,9 @@ const CompanyInfoItem = styled.div`
   margin-bottom: 8px;
   font-size: 9px;
   font-weight: 300;
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
 `;
 const Disclaimer = styled.div`
   width: 30vw;
@@ -45,6 +51,9 @@ const Disclaimer = styled.div`
   font-family: "SUIT";
   font-weight: 200;
   font-size: 12px;
+  @media screen and (max-width: 768px) {
+    width: 70vw;
+  }
 `;
 const DownLoadTextBox = styled.div`
   margin-right: 40px;

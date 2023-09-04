@@ -32,6 +32,22 @@ const ChapterBoxContainer = styled.div`
     font-size: 1.4rem;
     margin-bottom: 30px;
   }
+  @media screen and (max-width: 768px) {
+    div:nth-child(1) {
+      font-size: 1.5rem;
+    }
+    div:nth-child(2) {
+      margin-top: 5vh;
+      font-size: 2rem;
+    }
+    div:nth-child(3) {
+      margin-bottom: 0.4vh;
+      font-size: 0.9rem;
+    }
+    div:nth-child(4) {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 function ChapterBox({ chapter, title, des_01, des_02 }) {
