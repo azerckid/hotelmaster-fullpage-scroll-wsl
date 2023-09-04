@@ -1,8 +1,13 @@
-import FullPageScroll from './FullPageScroll';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FullPageScroll from "./FullPageScroll";
 
 function App() {
   return (
-    <FullPageScroll />
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<FullPageScroll />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
