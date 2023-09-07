@@ -1,7 +1,18 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import depic04 from "../img/bdepic_04.png";
+
+const movingAnimationFromBottom = keyframes`
+  from{
+    opacity:0;
+    transform:translateY(50vw);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0vw);
+  }
+`;
 
 const ServiceBoxContainer = styled.div`
   width: 100vw;
@@ -24,13 +35,14 @@ const ChapterSubBox = styled.div`
 `;
 const DescriptionBox = styled.div`
   width: 100vw;
+  margin-bottom: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "SUIT", Heavy;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
   color: #000;
 `;
 
@@ -41,6 +53,7 @@ const DePicBox02 = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: ${movingAnimationFromBottom} 1s ease-in-out;
 `;
 
 const ServiceBox_02 = () => {

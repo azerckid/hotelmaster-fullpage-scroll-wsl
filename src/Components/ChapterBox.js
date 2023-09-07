@@ -6,7 +6,7 @@ const ChapterBoxContainer = styled.div`
   height: 32vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: #605bff;
   color: #fff;
@@ -14,23 +14,23 @@ const ChapterBoxContainer = styled.div`
   font-size: 8px;
   font-weight: 300;
   div:nth-child(1) {
-    margin-top: 30px;
+    margin-top: 3vh;
     font-size: 2rem;
   }
   div:nth-child(2) {
-    margin-top: 10px;
+    margin-top: 2vh;
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
   }
   div:nth-child(3) {
-    margin-top: 10px;
+    margin-top: 1vh;
     font-size: 1.4rem;
   }
   div:nth-child(4) {
-    margin-top: 4px;
+    margin-top: 0.5vh;
+    margin-bottom: 3vh;
     font-size: 1.4rem;
-    margin-bottom: 30px;
   }
   @media screen and (max-width: 768px) {
     div:nth-child(1) {

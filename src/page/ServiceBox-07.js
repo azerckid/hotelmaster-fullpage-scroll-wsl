@@ -1,7 +1,18 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import depic08 from "../img/bdepic_08.png";
+
+const movingAnimationFromBottom = keyframes`
+  from{
+    opacity:0;
+    transform:translateY(50vw);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0vw);
+  }
+`;
 
 const ServiceBoxContainer = styled.div`
   width: 100vw;
@@ -60,13 +71,14 @@ const DescriptionBox = styled.div`
 `;
 
 const DePicBox02 = styled.div`
-  width: 60vw;
+  width: 50vw;
   height: 60vh;
   margin-left: -10vw;
   background-image: ${(props) => `url(${props.depic})`};
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  animation: ${movingAnimationFromBottom} 1s ease-in-out;
   @media screen and (max-width: 768px) {
     width: 90vw;
     height: 30vh;
@@ -74,18 +86,34 @@ const DePicBox02 = styled.div`
 `;
 
 const ServiceBox_02 = () => {
-  return (
-    <ServiceBoxContainer>
-      <ChapterSubBox>
-        <DePicBox02 depic={depic08}></DePicBox02>
-        <DescriptionBox>
-          <div>여행 준비 전 쇼핑해 볼까?</div>
-          <div>스토어에서 다양하게 구매해</div>
-          <div>알차게 여행 준비해요!</div>
-        </DescriptionBox>
-      </ChapterSubBox>
-    </ServiceBoxContainer>
-  );
+  const [didExit, setDidExit] = React.useState(false);
+  if (didExit) {
+    return (
+      <ServiceBoxContainer>
+        <ChapterSubBox>
+          <DePicBox02 depic={depic08}></DePicBox02>
+          <DescriptionBox>
+            <div>여행 준비 전 쇼핑해 볼까?</div>
+            <div>스토어에서 다양하게 구매해</div>
+            <div>알차게 여행 준비해요!</div>
+          </DescriptionBox>
+        </ChapterSubBox>
+      </ServiceBoxContainer>
+    );
+  } else {
+    return (
+      <ServiceBoxContainer>
+        <ChapterSubBox onEnded={() => setDidExit(true)}>
+          <DePicBox02 depic={depic08} didExit={didExit}></DePicBox02>
+          <DescriptionBox didExit={didExit}>
+            <div>여행 준비 전 쇼핑해 볼까?</div>
+            <div>스토어에서 다양하게 구매해</div>
+            <div>알차게 여행 준비해요!</div>
+          </DescriptionBox>
+        </ChapterSubBox>
+      </ServiceBoxContainer>
+    );
+  }
 };
 
 export default ServiceBox_02;

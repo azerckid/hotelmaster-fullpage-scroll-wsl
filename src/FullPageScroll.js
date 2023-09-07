@@ -7,6 +7,7 @@ import Fullpage, {
 } from "@ap.cx/react-fullpage";
 
 import NaviBar from "./Components/NaviBar";
+import Section from "./Components/Section";
 import Footer from "./Components/Footer";
 
 import bg from "./img/bMainPic.png";
@@ -55,41 +56,41 @@ const FullPageScroll = () => {
             des03={`관리부터 예약까지 한번에`}
           ></ServiceBox00>
         </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        <Section style={SectionSyle}>
           <ServiceBox01
             des01={"업무처리도 해야하고"}
             des02={`예약도 해야하는데 너무 복잡해`}
             depic={depic01}
           />
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox01
             des01={"호텔마스터 하나로"}
             des02={`한번에 해결완료 !`}
             depic={depic02}
           />
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox02></ServiceBox02>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox03></ServiceBox03>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox04></ServiceBox04>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox05></ServiceBox05>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox06></ServiceBox06>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox07></ServiceBox07>
-        </FullpageSection>
-        <FullpageSection style={SectionSyle}>
+        </Section>
+        <Section style={SectionSyle}>
           <ServiceBox08></ServiceBox08>
-        </FullpageSection>
+        </Section>
         <FullpageSection
           style={{
             ...SectionSyle,
