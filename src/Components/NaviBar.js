@@ -77,7 +77,7 @@ const LogoBox = styled.div`
   }
 `;
 
-const NaviBar = () => {
+const NaviBar = ({ manualRef }) => {
   return (
     <NaviContainer>
       <NaviBox>

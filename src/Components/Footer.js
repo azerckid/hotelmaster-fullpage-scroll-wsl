@@ -122,12 +122,12 @@ function Footer() {
           <DownLoadTextBox> 호텔마스터 이용방법 다운로드</DownLoadTextBox>
           <DownLoadBox>
             <div>
-              <a href={manualPC} download="호텔마스터 이용방법">
+              <a href={manualPC} download="호텔마스터 이용방법 PC">
                 PC. Ver
               </a>
             </div>
             <div>
-              <a href={manualMobile} download="호텔마스터 이용방법">
+              <a href={manualMobile} download="호텔마스터 이용방법 Mobile">
                 Mobile. Ver
               </a>
             </div>

@@ -59,13 +59,13 @@ const DescriptionBox = styled.div`
     width: 90vw;
     margin-left: 0vw;
     div:nth-child(1) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     div:nth-child(2) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     div:nth-child(3) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -79,8 +79,10 @@ const DePicBox02 = styled.div`
   background-repeat: no-repeat;
   animation: ${movingAnimationFromTop} 1s ease-in-out;
   @media screen and (max-width: 768px) {
-    width: 90vw;
-    height: 30vh;
+    background-size: cover;
+    background-position: left;
+    width: 60vw;
+    height: 40vh;
   }
 `;
 

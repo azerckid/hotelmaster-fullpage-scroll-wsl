@@ -59,13 +59,13 @@ const DescriptionBox = styled.div`
     width: 90vw;
     margin-left: 0vw;
     div:nth-child(1) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     div:nth-child(2) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     div:nth-child(3) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 `;

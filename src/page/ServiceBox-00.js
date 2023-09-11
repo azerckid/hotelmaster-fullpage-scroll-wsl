@@ -60,7 +60,9 @@ const ServiceBox_01 = ({ des01, des02, des03, depic }) => {
         {des03}
       </DescriptionBox>
       <StoreBox>
-        <ButtonBox pic={google}></ButtonBox>
+        <a href="https://play.google.com/store/apps/details?id=com.hotelmaster.hotelmaster&hl=en_US">
+          <ButtonBox pic={google}></ButtonBox>
+        </a>
         <ButtonBox pic={apple}></ButtonBox>
       </StoreBox>
     </ServiceBoxContainer>

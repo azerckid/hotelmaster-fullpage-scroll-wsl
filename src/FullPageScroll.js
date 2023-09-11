@@ -30,6 +30,8 @@ import ServiceBox09 from "./page/ServiceBox-09";
 // const bgU = "https://ibb.co/X4KFWGP";
 
 const FullPageScroll = () => {
+  const manualRef = React.useRef(null);
+
   const SectionSyle = {
     width: "100%",
     height: "100vh",
@@ -52,7 +54,7 @@ const FullPageScroll = () => {
             backgroundRepeat: `no-repeat`,
           }}
         >
-          <NaviBar />
+          <NaviBar manualRef={manualRef} />
           <ServiceBox00
             des01={"호텔 마스터"}
             des02={`그 편리함의 시작`}
@@ -102,7 +104,7 @@ const FullPageScroll = () => {
           }}
         >
           <ServiceBox09></ServiceBox09>
-          <Footer />
+          <Footer ref={manualRef} />
         </FullpageSection>
       </FullPageSections>
     </Fullpage>
