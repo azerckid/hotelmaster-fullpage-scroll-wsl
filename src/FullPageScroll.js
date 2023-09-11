@@ -11,6 +11,7 @@ import Section from "./Components/Section";
 import Footer from "./Components/Footer";
 
 import bg from "./img/bMainPic.png";
+
 import depic01 from "./img/bdepic_01.png";
 import depic02 from "./img/bdepic_02.png";
 // import depic10 from "./img/bdepic_10.png";
@@ -25,6 +26,8 @@ import ServiceBox06 from "./page/ServiceBox-06";
 import ServiceBox07 from "./page/ServiceBox-07";
 import ServiceBox08 from "./page/ServiceBox-08";
 import ServiceBox09 from "./page/ServiceBox-09";
+
+// const bgU = "https://ibb.co/X4KFWGP";
 
 const FullPageScroll = () => {
   const SectionSyle = {

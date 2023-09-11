@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import manualPC from "../img/manualPC.pdf";
+import manualMobile from "../img/manualMobile.pdf";
+
 const FooterContainer = styled.div`
   width: 100vw;
   display: flex;
@@ -118,8 +121,16 @@ function Footer() {
         <Disclaimer>
           <DownLoadTextBox> 호텔마스터 이용방법 다운로드</DownLoadTextBox>
           <DownLoadBox>
-            <div>PC. Ver</div>
-            <div>Mobile. Ver</div>
+            <div>
+              <a href={manualPC} download="호텔마스터 이용방법">
+                PC. Ver
+              </a>
+            </div>
+            <div>
+              <a href={manualMobile} download="호텔마스터 이용방법">
+                Mobile. Ver
+              </a>
+            </div>
           </DownLoadBox>
         </Disclaimer>
       </FooterInfo>
