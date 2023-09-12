@@ -10,7 +10,7 @@ import NaviBar from "./Components/NaviBar";
 import Section from "./Components/Section";
 import Footer from "./Components/Footer";
 
-import bg from "./img/bMainPic.png";
+import bg from "./img/hotelMasterTitlePic.jpg";
 
 import depic01 from "./img/bdepic_01.png";
 import depic02 from "./img/bdepic_02.png";
@@ -50,7 +50,7 @@ const FullPageScroll = () => {
             justifyContent: "flex-start",
             backgroundImage: `url(${bg})`,
             backgroundSize: `cover`,
-            backgroundPosition: `center`,
+            backgroundPosition: `bottom`,
             backgroundRepeat: `no-repeat`,
           }}
         >
